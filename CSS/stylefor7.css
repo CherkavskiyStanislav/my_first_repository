@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    margin: 0;
+}
+.first-screen{
+    background-image: url('/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.site_body{
+    width: 1150px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.site__block{
+    height: 50px;
+    width: 200px;
+    display: inline-block;
+    font-size: large;
+}
+
+.logo{
+    float: left;
+    height: 50px;
+}
+h1{
+    display: inline-block;
+    margin: 0 5px;
+    height: 50px;
+
+    font-weight: normal;
+    font-size: 20px;
+    color: #46B1DE;
+}
+
+.navigation{
+    width: 350px;
+    text-align: center;
+    margin-left: 230px;
+}
+.navigation a{
+    margin: 0 10px;
+}
+.tel{
+    margin-left: 160px;
+}
+.tel img {
+    float: left;
+    margin: 0 10px;
+}
+
+h2{
+    white-space: pre-line;
+    margin: 15% 0 0;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+h2 span{
+    color: #46B1DE;
+}
+p{
+    font-size: 20px;
+    white-space: pre-line;
+    margin: 0;
+}
+
+
+.button{
+    margin-top: 5%;
+    width: 500px;
+}
+.button a{
+    display: inline-block;
+    border: 1px solid #000;
+    width: 120px;
+    padding: 20px;
+
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.call_butt{
+    background-color: #46B1DE;
+    color: #fff;
+    margin-left: 20px;
+}
+.serv_butt{
+    background-color: #fff;
+    color: #46B1DE;
+    margin-left: 60px;
+}
+
+.cards{
+    margin-top: 17%;
+    margin-left: calc((1150px - 280px * 3) / 2);
+}
+.cards_style{
+    display: inline-block;
+    width: 260px;
+    height: 80px;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin: 0 20px;
+}
+.cards_style span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.textcolor{
+    color: #46B1DE;
+    font-size: 50px;
+    margin: 10px 10px;
+}
+.long_text{
+    width: 180px;
+    white-space: pre-line;
+}
+.xlong_text{
+    width: 140px;
+    white-space: pre-line;
+}
