@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fourth_project</title>
+    <style>
+        .icecream{
+            background-color:rgb(250, 238, 223);
+        }
+        .form{
+            background-color: rgb(252, 240, 221);
+        }
+
+    </style>
+</head>
+
+<body>
+    <form 
+        action=""
+        method="post"
+        class="registration"
+    >
+        <div class="email">
+            <label for="Email">Email</label> 
+            <br>
+            <input
+                type="text"
+                name="login"
+                maxlength="100"
+                placeholder="Enter your email"
+                id="Email"
+                required
+            > 
+        </div>
+            <br>
+        <div class="pass">
+            <label for="pass">
+                Password
+                <br>
+                <input
+                    type="password"
+                    name="password"
+                    minlength="6"
+                    placeholder="Enter your password"
+                    id="pass"
+                    required
+                >
+            </label>
+        </div>
+            <br>
+        <div class="button">
+            <input type="submit" value="Sing in">
+        </div>  
+    </form>
+
+
+    <form
+        action=""
+        method="post"
+        class="icecream"
+    >
+        <h1>Ice cream wholesale</h1>
+        <div class="choose_ice_cream">
+            <h2>Choose the test and amount of ice cream</h2>
+            <input
+                type="checkbox"
+                name="ice_cream"
+                id="vanilla"
+                value="vanilla"
+                checked
+            >
+            <label for="vanilla">vanilla</label>
+            <br>
+            <label for="quantity1">quantity</label>
+            <input
+                type="number"
+                name="quantity"
+                min="20"
+                max="100"
+                placeholder="99"
+                id="quantity1"
+            >
+            <br>
+            <br>
+            <i>Price per unit: <b>15&#8372</b></i>
+            <br>
+            <br>
+            <input
+                type="checkbox"
+                name="ice_cream"
+                id="chocolate"
+                value="chocolate"
+                checked
+            >
+            <label for="chocolate">chocolate</label>
+            <br>
+            <label for="quantity2">quantity</label>
+            <input
+                type="number"
+                name="quantity"
+                max="100"
+                min="20"
+                placeholder="99"
+                id="quantity2"
+            >
+            <br>
+            <br>
+            <i>Price per unit: <b>20&#8372</b></i>
+            <br>
+            <br>
+            <input
+                type="checkbox"
+                name="ice_cream"
+                id="strawberry"
+                value="strawberry"
+                checked
+            >
+            <label for="strawberry">strawberry</label>
+            <br>
+            <label for="quantity3">quantity</label>
+            <input
+                type="number"
+                name="quantity"
+                max="100"
+                min="20"
+                placeholder="99"
+                id="quantity3"
+            >
+            <br>
+            <br>
+            <i>Price per unit: <b>18&#8372</b></i>
+        </div>
+
+        <div class="payment">
+            <h3>Payment</h3>
+                <input 
+                    type="radio" 
+                    name="payment" 
+                    value="type1"
+                    id="type1"
+                    required
+                >            
+                <label for="type1">Credit card</label>
+                <input 
+                    type="radio" 
+                    name="payment" 
+                    value="type2"
+                    id="type2"
+                    required
+                >            
+                <label for="type2">Paypal</label>
+        </div>
+        <br>
+        <button type="submit">Pay</button>
+    </form>
+
+
+    <br>
+    <div class="crypto">
+        <select name="choosecrypto">
+            <option value="Get cryptocurrency" hidden selected>Get cryptocurrency</option>
+            <option value="Bitcoin">Bitcoin</option>
+            <option value="Ethereum">Ethereum</option>
+            <option value="Tether">Tether</option>
+            <option value="Binance Coin">Binance Coin</option>
+            <option value="Cardano">Cardano</option>
+        </select>
+    </div>
+
+
+    <form
+    action=""
+    method="post"
+    class="form"
+    >
+        <h2>Registration</h2>
+        <div class="firsname">
+            <label for="fname">Firs name</label> 
+            <br>
+            <input
+                type="text"
+                name="fname"
+                placeholder="Enter your name"
+                id="fname"
+                required
+            > 
+        </div>
+        <br>
+        <div class="lastname">
+            <label for="lname">Last name</label>
+            <br>
+            <input
+                type="text"
+                name="lname"
+                placeholder="Enter your surname"
+                id="lname"
+                required
+            >
+        </div>
+        <br>
+        <div class="gender">
+            <legend>Gender</legend>
+            <label for="m">Male</label>
+                <input 
+                    type="radio" 
+                    name="gender" 
+                    value="male"
+                    id="m"
+                    required
+                >            
+                <label for="f">Female</label>
+                <input 
+                    type="radio" 
+                    name="gender" 
+                    value="female"
+                    id="f"
+                    required
+                >            
+        </div>
+        <br>
+        <div class="birthday">
+            <label for="bday">Birthday</label>
+            <br>
+            <input 
+                type="date"
+                name="birthday"
+                id="bday"
+            >
+        </div>
+        <br>
+        <div class="about">
+            <label for="about">Write about yourself</label>
+            <br>
+            <textarea 
+            name="about"
+            id="about"
+            cols="30"
+            rows="10"
+            placeholder="A few words about who you are"
+            ></textarea>
+        </div>
+        <br>
+        <div class="course">
+            <select name="getcourse">
+                <option value="Get cryptocurrency" hidden>Choose a course</option>
+                <option value="Backend">Backend</option>
+                <option value="Frontend">Frontend</option>
+                <option value="Web desing">Web desing</option>
+                <option value="3D desing">3D desing</option>
+            </select>
+        </div>
+        <br>
+        <div class="photo">
+            <label for="photo">Add a photo</label>
+            <br>
+            <input 
+                type="file"
+                name="addphoto"
+                id="photo"
+            >
+        </div>
+        <br>
+        <div class="button2">
+            <input type="submit" value="Sing Up">
+        </div>  
+    </form>
+</body>
+</html>

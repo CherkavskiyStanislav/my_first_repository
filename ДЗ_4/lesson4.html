@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input 
+        type="text" 
+        name="phone" 
+        maxlength="13" 
+        placeholder="Введіть Ваш телефон"
+    >
+    <h1>Морозиво</h1>
+    ванільне
+    <input 
+        type="checkbox" 
+        name="ice" 
+        value="vanila" 
+    > 
+    шоколадне
+    <input 
+    type="checkbox" 
+    name="ice" 
+    value="chocolate"
+    >
+    полуничне
+    <input 
+        type="checkbox" 
+        name="ice" 
+        value="strawbery"
+    >
+    <br>
+    <h3>Payment</h3>
+    <div class="payment">
+        <input 
+            type="radio" 
+            name="type1" 
+            value="creditcard"
+        >            
+        Credit card
+
+        <input 
+            type="radio" 
+            name="type2" 
+            value="paypal" 
+        >            
+        Paypal
+    </div>    
+    <h2>Час</h2>
+            8:00-12:00
+            <input 
+                type="radio" 
+                name="time" 
+                value="1"
+            >
+            12:00-16:00
+            <input 
+                type="radio" 
+                name="time" 
+                value="2" 
+                checked
+            >
+            12:00-16:00
+            <input 
+                type="radio" 
+                name="time" 
+                value="3"
+            >
+    <br>
+    <textarea 
+        name= "text" 
+        id="" 
+        cols="30" 
+        rows="10"
+    >
+    Цей текст відобразиться за замовченням
+     </textarea>
+    <br>
+    <select name="vegetables">
+    <option value="bitcoin">Bitcoin</option>
+    <option value="ethereum">Ethereum</option>
+    <option value="tether">Tether</option>
+    <option value="binance_coin">Binance Coin</option>
+    <option value="cardano">Cardano</option>
+    </select>
+    <br>
+    <select 
+        name="vegetables" 
+        size="3" 
+        multiple
+    >
+        <option value="bitcoin">Bitcoin</option>
+        <option value="ethereum">Ethereum</option>
+        <option value="tether">Tether</option>
+        <option value="binance_coin">Binance Coin</option>
+        <option value="cardano">Cardano</option>
+    </select>
+    <h2>Морозиво</h2>
+    <label for="vanila_ice">ванільне</label>
+    <input 
+        id="vanila_ice" 
+        type="checkbox" 
+        name="ice" 
+        value="vanila"
+    >
+    <label for="chocolate_ice">шоколадне</label>
+    <input 
+        id="chocolate_ice" 
+        type="checkbox" 
+        name="ice" 
+        value="chocolate"
+    >
+    <label for="strawbery_ice">полуничне</label>
+    <input 
+        id="strawbery_ice" 
+        type="checkbox" 
+        name="ice" 
+        value="strawbery"
+    >
+    <h2>Морозиво</h2>
+    <form 
+        name="ice_cream" 
+        method="POST" 
+        action="send.php" 
+        enctype="multipart/form-data"
+    >
+        <label for="name">Ваше ім’я</label>
+        <br>
+        <input 
+        id="name" 
+        type="text" 
+        name="name" 
+        placeholder="Ваше ім’я"
+        >
+        <br>
+        <label for="phone">Ваше телефон</label>
+        <br>
+        <input 
+            id="phone" 
+            type="text" 
+            name="phone" 
+            placeholder="Ваше телефон"
+        >
+        <h3>Яке морозиво ви любите?</h3>
+        <label for="vanila_ice">ванільне</label>
+        <input 
+            id="vanila_ice" 
+            type="checkbox"
+            name="ice"
+            value="vanila"
+        >
+        <br>
+        <label for="chocolate_ice">шоколадне</label>
+        <input 
+            id="chocolate_ice" 
+            type="checkbox" 
+            name="ice" 
+            value="chocolate"
+        >
+        <br>
+        <label for="strawbery_ice">полуничне</label>
+        <input 
+            id="strawbery_ice" 
+            type="checkbox" 
+            name="ice" 
+            value="strawbery"
+        >
+        <br>
+        <label for="foto">Додати фото</label>
+        <input id="foto" type="file">
+        <br>
+        <br>
+        <button type="submit">Відправити данні</button>
+    </form>
+</body>
+</html>
